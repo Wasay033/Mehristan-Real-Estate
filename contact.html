@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <style>
+         
+
+
+         body{
+            background-image: linear-gradient(to right, rgb(230, 253, 253) , rgba(58, 58, 56, 0.521));
+ }
+         *{
+    
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+a{
+    display: inline;
+    text-decoration: none;
+}
+.hero{
+    font-size: 30px;
+    display: inline;
+    
+   
+    width: 80%;
+    height: 700px;
+    
+    
+}
+nav{
+    display:inline;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 100px;
+}
+
+nav ul li{
+    list-style: none;
+    display: inline;
+    padding: 0px 20px;
+    
+    
+}
+nav ul li a{
+    display: inline;
+    color: #1d1d24;
+    position:relative;
+    padding: 5px ;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+nav ul li a:hover{
+    color: #fd4766;
+}
+nav ul li a:after{
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 0;
+    height: 3px;
+    background: #fd4766;
+    transition: .3s;
+    bottom: 0;
+}
+nav ul li a:hover:after{
+    width: 100%;
+}
+.btn{
+    color: #fff;
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding: 16px 40px;
+    border-radius: 500px;
+    display: inline;
+    font-weight: 500;
+    transition: all .4s ease-in-out;
+    background-size: 152% 100%;
+    background: #fd4766;
+    border: 2px solid #fd4766;
+}
+
+
+
+
+
+.content{
+    position: absolute;
+    top: 30%;
+    left: 5%;
+    font-size: medium;
+}
+
+.float-button {
+        text-decoration: none;
+        position: fixed;
+        padding: 10px;
+        padding-right: 15px;
+        top: 30%;
+        right: 43%;
+        color: #fff;
+        background-color:#25D366;
+        border-radius: 25px 30px 5px 25px;
+        z-index: 100;
+        font-family: Arial;
+        font-size: 17px;
+        animation: whatsapp-animation 0.5s ease-in-out;
+        box-shadow: 1px 2px 5px 2px rgba(30,30,30,0.3);
+        transition:all 0.3s ease-out;
+    }
+
+    .float-button:hover {
+         background-color: #128C7E;
+          color: #fff;
+    }
+
+    .fa-whatsapp {
+        font-size: 20px !important;
+        padding-right: 5px;
+        padding-left: 5px;
+    }
+
+    @keyframes whatsapp-animation {
+        from {
+            opacity: 0%;
+        }
+
+        to {
+            opacity: 100%
+        }
+    }
+
+    @media screen and (max-width: 545px) {
+        span {
+            display: none;
+        }
+
+        .float-button {
+            bottom: 15px;
+            right: 15px;
+            width: 20px;
+            border-radius: 20px 20px 5px 20px;
+        }
+
+        .fa-whatsapp {
+            font-size: 22px !important;
+            padding: 4px;
+        }
+    }
+
+
+
+
+
+    .conten{
+    position: absolute;
+    top: 40%;
+    left: 5%;
+    font-size: medium;
+}
+
+.float-butto {
+        text-decoration: none;
+        position: fixed;
+        padding: 10px;
+        padding-right: 15px;
+        top: 40%;
+        right: 40%;
+        color: #fff;
+        background-color:#358bec;
+        border-radius: 25px 30px 5px 25px;
+        z-index: 100;
+        font-family: Arial;
+        font-size: 17px;
+        animation: whatsapp-animation 0.5s ease-in-out;
+        box-shadow: 1px 2px 5px 2px rgba(30,30,30,0.3);
+        transition:all 0.3s ease-out;
+    }
+
+    .float-butto:hover {
+         background-color: #0c4b92;
+          color: #fff;
+    }
+
+    .fa-facebook {
+        font-size: 20px !important;
+        padding-right: 5px;
+        padding-left: 5px;
+        
+    }
+
+    @keyframes whatsapp-animation {
+        from {
+            opacity: 0%;
+        }
+
+        to {
+            opacity: 100%
+        }
+    }
+
+    @media screen and (max-width: 545px) {
+        span {
+            display: none;
+        }
+
+        .float-butto {
+            bottom: 15px;
+            right: 15px;
+            width: 20px;
+            border-radius: 20px 20px 5px 20px;
+        }
+
+        .fa-facebook{
+            font-size: 22px !important;
+            padding: 4px;
+        }
+    }
+
+
+
+
+
+
+    .conte{
+    position: absolute;
+    top: 50%;
+    left: 5%;
+    font-size: medium;
+}
+
+.float-butt {
+        text-decoration: none;
+        position: fixed;
+        padding: 10px;
+        padding-right: 15px;
+        top: 50%;
+        right: 63%;
+        color: #fff;
+        background-color:#358bec;
+        border-radius: 25px 30px 5px 25px;
+        z-index: 100;
+        font-family: Arial;
+        font-size: 17px;
+        animation: whatsapp-animation 0.5s ease-in-out;
+        box-shadow: 1px 2px 5px 2px rgba(30,30,30,0.3);
+        transition:all 0.3s ease-out;
+    }
+
+    .float-butt:hover {
+         background-color: #0c4b92;
+          color: #fff;
+    }
+
+    .fa-phone{
+        font-size: 20px !important;
+        padding-right: 5px;
+        padding-left: 5px;
+        
+    }
+
+    @keyframes whatsapp-animation {
+        from {
+            opacity: 0%;
+        }
+
+        to {
+            opacity: 100%
+        }
+    }
+
+    @media screen and (max-width: 545px) {
+        span {
+            display: none;
+        }
+
+        .float-butt {
+            bottom: 15px;
+            right: 15px;
+            width: 20px;
+            border-radius: 20px 20px 5px 20px;
+        }
+
+        .fa-phone{
+            font-size: 22px !important;
+            padding: 4px;
+        }
+    }
+
+
+
+
+
+
+
+    .cont{
+    position: absolute;
+    top: 60%;
+    left: 5%;
+    font-size: medium;
+}
+
+.float-but {
+        text-decoration: none;
+        position: fixed;
+        padding: 10px;
+        padding-right: 15px;
+        top: 60%;
+        right: 53%;
+        color: #fff;
+        background-color:#f33919;
+        border-radius: 25px 30px 5px 25px;
+        z-index: 100;
+        font-family: Arial;
+        font-size: 17px;
+        animation: whatsapp-animation 0.5s ease-in-out;
+        box-shadow: 1px 2px 5px 2px rgba(30,30,30,0.3);
+        transition:all 0.3s ease-out;
+    }
+
+    .float-but:hover {
+         background-color: #b30505;
+          color: #fff;
+    }
+
+    .fa-envelope{
+        font-size: 20px !important;
+        padding-right: 5px;
+        padding-left: 5px;
+        
+    }
+
+    @keyframes whatsapp-animation {
+        from {
+            opacity: 0%;
+        }
+
+        to {
+            opacity: 100%
+        }
+    }
+
+    @media screen and (max-width: 545px) {
+        span {
+            display: none;
+        }
+
+        .float-but {
+            bottom: 15px;
+            right: 15px;
+            width: 20px;
+            border-radius: 20px 20px 5px 20px;
+        }
+
+        .fa-envelope{
+            font-size: 22px !important;
+            padding: 4px;
+        }
+    }
+
+
+    
+
+
+
+
+
+
+  </style>
+
+
+    <title>Mehristan Real Estate</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+   
+</head>
+<body>
+
+ 
+ 
+    <div class="hero">
+        <nav>
+
+        
+            
+            <ul>
+
+                <li><a href="C:\Users\mahwish\Desktop\ISE proj\index.html">Home</a></li>
+                <li><a href="C:\Users\mahwish\Desktop\ISE proj\buyer.html">Buyer</a></li>
+                <li><a href="C:\Users\mahwish\Desktop\ISE proj\seller.html">Seller</a></li>
+                <li><a href="C:\Users\mahwish\Desktop\ISE proj\contact.html">Contact</a></li>
+                <li><a href="C:\Users\mahwish\Desktop\ISE proj\about.html">About</a></li>
+                
+                
+            </ul>
+      
+        </nav>
+
+        <div class="content">
+            
+            <h1>  You can contact us on What'sapp :   </h1>
+            <a class="float-button" target="_blank"  >
+                <i class="fa fa-whatsapp" aria-hidden="true"></i>
+                <span>03370388570<span>
+              </a>
+
+            </div>
+
+
+
+            <div class="conten">
+            
+                <h1>  You can visite our facebook page  :   </h1>
+                <a class="float-butto" target="_blank" >
+                    <i class="	fa fa-facebook" aria-hidden="true"></i>
+                    <span>Mehristan Real Estate<span>
+                  </a>
+    
+                </div>
+
+
+
+                <div class="conte">
+            
+                    <h1>  You can call us   :   </h1>
+                    <a class="float-butt" target="_blank"   >
+                        <i class="fa fa-phone" aria-hidden="true"></i>
+                        <span>03370388570<span>
+                      </a>
+        
+                    </div>
+
+
+
+
+                    <div class="cont">
+            
+                        <h1>  You can email us   :   </h1>
+                        <a class="float-but" target="_blank"  >
+                            <i class="fa fa-envelope" aria-hidden="true"></i>
+                            <span>raffaysattar123@gmail.com<span>
+                          </a>
+            
+                        </div>      
+        
+             </div>
+
+
+   
+</body>
+</html>

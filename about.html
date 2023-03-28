@@ -1,0 +1,524 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mehristan Real Estate</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+
+    <style>
+
+
+
+body{
+            background-image: linear-gradient(to right, rgb(230, 253, 253) , rgba(58, 58, 56, 0.521));
+ }
+       
+    
+*{
+   
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: 'Poppins', sans-serif;
+}
+a{
+   display: inline;
+   text-decoration: none;
+   
+}
+
+
+
+
+.hero{
+   font-size: 30px;
+   display: inline;
+   
+
+   
+   
+   
+   
+}
+nav{
+   
+   display:inline;
+   align-items: center;
+   justify-content: space-between;
+   padding: 30px 100px;
+}
+
+nav ul li{
+   list-style: none;
+   display: inline;
+   padding: 0px 20px;
+   
+   
+}
+nav ul li a{
+   display: inline;
+   color: #1d1d24;
+   position:relative;
+   padding: 5px ;
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+nav ul li a:hover{
+   color: #fd4766;
+}
+nav ul li a:after{
+   content: "";
+   position: absolute;
+   left: 0;
+   width: 0;
+   height: 3px;
+   background: #fd4766;
+   transition: .3s;
+   bottom: 0;
+}
+nav ul li a:hover:after{
+   width: 100%;
+}
+.btn{
+   color: #fff;
+   font-size: 16px;
+   text-transform: uppercase;
+   letter-spacing: 2px;
+   padding: 16px 40px;
+   border-radius: 500px;
+   display: inline;
+   font-weight: 500;
+   transition: all .4s ease-in-out;
+   background-size: 152% 100%;
+   background: #fd4766;
+   border: 2px solid #fd4766;
+}
+      
+
+/*-----------------------------------*\
+  #style.css
+\*-----------------------------------*/
+
+/*-----------------------------------*\
+  #CUSTOM PROPERTY
+\*-----------------------------------*/
+
+:root {
+
+/**
+ * colors
+ */
+
+--dark-jungle-green: hsl(188, 63%, 7%);
+--prussian-blue: hsl(200, 69%, 14%);
+--raisin-black-1: hsl(227, 29%, 13%);
+--raisin-black-2: hsl(229, 17%, 19%);
+--yellow-green: hsl(89, 72%, 45%);
+--orange-soda: hsl(9, 100%, 62%);
+--cultured-1: hsl(0, 0%, 93%);
+--cultured-2: hsl(192, 24%, 96%);
+--misty-rose: hsl(7, 56%, 91%);
+--alice-blue: hsl(210, 100%, 97%);
+--seashell: hsl(8, 100%, 97%);
+--cadet: hsl(200, 15%, 43%);
+--white: hsl(0, 0%, 100%);
+--black: hsl(0, 0%, 0%);
+--opal: hsl(180, 20%, 62%);
+
+/**
+ * typography
+ */
+
+--ff-nunito-sans: "Nunito Sans", sans-serif;
+--ff-poppins: "Poppins", sans-serif;
+
+--fs-1: 1.875rem;
+--fs-2: 1.5rem;
+--fs-3: 1.375rem;
+--fs-4: 1.125rem;
+--fs-5: 0.875rem;
+--fs-6: 0.813rem;
+--fs-7: 0.75rem;
+
+--fw-500: 500;
+--fw-600: 600;
+--fw-700: 700;
+
+
+
+
+}
+
+
+
+
+
+/*-----------------------------------*\
+#RESET
+\*-----------------------------------*/
+
+*, *::before, *::after {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+li { list-style: none; }
+
+a { text-decoration: none; }
+
+a,
+img,
+span,
+button,
+ion-icon { display: block; }
+
+button {
+border: none;
+background: none;
+font: inherit;
+text-align: left;
+cursor: pointer;
+}
+
+address { font-style: normal; }
+
+ion-icon { pointer-events: none; }
+
+html {
+font-family: var(--ff-nunito-sans);
+scroll-behavior: smooth;
+}
+
+body {
+background: var(--white);
+overflow-x: hidden;
+background-image: linear-gradient(to right, rgb(230, 253, 253) , rgba(58, 58, 56, 0.521));
+}
+
+::-webkit-scrollbar {
+width: 10px;
+height: 8px;
+}
+
+::-webkit-scrollbar-track { background: var(--white); }
+
+::-webkit-scrollbar-thumb {
+background: var(--cadet);
+border-left: 2px solid var(--white);
+}
+
+
+
+
+
+
+/*-----------------------------------*\
+#FOOTER
+\*-----------------------------------*/
+
+.footer {
+background: var(--raisin-black-1);
+color: var(--white);
+margin-bottom: 68px;
+}
+
+.footer .container { padding-inline: 30px; }
+
+.footer a { color: inherit; }
+
+.footer-top {
+padding-top: 80px;
+padding-bottom: 40px;
+}
+
+
+
+.contact-list {
+display: grid;
+gap: 15px;
+margin-bottom: 30px;
+}
+
+.contact-link {
+display: flex;
+align-items: flex-start;
+gap: 10px;
+}
+
+.contact-link ion-icon { font-size: 18px; }
+
+.contact-link :is(address, span) {
+font-size: var(--fs-5);
+transition: var(--transition);
+}
+
+
+
+.social-list {
+display: flex;
+align-items: center;
+gap: 20px;
+}
+
+.footer-list:not(:last-child) { margin-bottom: 50px; }
+
+.footer-list-title {
+font-family: var(--ff-poppins);
+font-size: var(--fs-3);
+font-weight: var(--fw-700);
+margin-bottom: 15px;
+}
+
+.footer-link {
+font-size: var(--fs-5);
+padding-block: 10px;
+}
+
+
+
+.copyright {
+font-size: var(--fs-5);
+text-align: center;
+}
+
+.copyright a { display: inline-block; }
+
+.copyright a:is(:hover, :focus) { color: var(--orange-soda); }
+
+
+@media (min-width: 992px) {
+
+
+
+/**
+ * FOOTER
+ */
+
+.footer-top .container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-brand {
+  max-width: 300px;
+  margin-bottom: 0;
+}
+
+.footer-link-box { flex-basis: 550px; }
+
+}
+
+
+
+/**
+ * REUSED STYLE
+ */
+
+.container { max-width: 1200px; }
+
+.has-scrollbar > li { min-width: calc(33.33% - 16.66px); }
+
+
+
+
+
+
+
+
+
+/**
+ * FOOTER
+ */
+
+.footer { --fs-5: 1rem; }
+
+.footer-link-box { flex-basis: 700px; }
+
+
+.card-deck{
+    padding-top: 5%;
+}
+
+.card{
+  padding: 5%;
+}
+
+h1{
+    text-align: center;
+    color: rgb(78, 0, 0);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+h3{
+    padding: 3%;
+}
+
+    </style>
+</head>
+<body>
+
+    <div class="hero">
+      
+        <nav>
+
+            
+            <ul>
+         
+
+                <li><a href="C:\Users\mahwish\Desktop\ISE proj\index.html">Home</a></li>
+                <li><a href="C:\Users\mahwish\Desktop\ISE proj\buyer.html">Buyer</a></li>
+                <li><a href="C:\Users\mahwish\Desktop\ISE proj\seller.html">Seller</a></li>
+                <li><a href="C:\Users\mahwish\Desktop\ISE proj\contact.html">Contact</a></li>
+                <li><a href="C:\Users\mahwish\Desktop\ISE proj\about.html">About</a></li>      
+                
+            </ul>
+
+          </nav>
+          </div>
+
+          <div class="para">
+              <h1> About Mehristan Real Estate </h1>
+            <h3> Mehristan Real Estate  was the brainchild of Pakistani  brothers, Abdul Sattar and Ghulam Rasool . Their mission was to make Pakistani real estate accessible and convenient for everyone. Together, they proceeded to lead Mehristan Real Estate  from a small start-up to the premier real estate entity of Pakistan.
+
+                Mehristan Real Estate  started its funding first round in 2018 which constituted of several angel investors and substantial investment from venture capital firms. A further two rounds of major investment were closed in late 2020 and early 2019, bringing in a total of $5 million. </h3>
+          </div>
+
+
+          
+
+
+
+          <div class="card-deck">
+            <div class="card">
+              <img class="card-img-top" src="../phone.png" alt="Card image cap">
+              <div class="card-body">
+                <h2 class="card-title">03370388570</h2>
+                
+              </div>
+            </div>
+            <div class="card">
+              <img class="card-img-top" src="../email.png" alt="Card image cap">
+              <div class="card-body">
+                <h3 class="card-title">raffaysattar123@gmail.com</h3>
+                
+              </div>
+            </div>
+            <div class="card">
+              <img class="card-img-top" src="../off3.png"  alt="Card image cap">
+              <div class="card-body">
+                <h3 class="card-title">Haji Murad Jaffer Goth Near Pakistan Hotel</h3>
+                
+              </div>
+            </div>
+          </div>  
+
+
+
+
+
+
+  <!-- 
+    - #FOOTER
+  -->
+
+  <footer class="footer">
+
+    <div class="footer-top">
+      <div class="container">
+
+        <div class="footer-brand">
+
+          <a href="C:\Users\mahwish\Desktop\ISE proj\index.html" class="logo">
+            <img src="../logomhr.png" width="100px" alt="Mehristan Real Estate">
+          </a>
+
+          
+
+          <ul class="contact-list">
+
+            <li>
+              <a href="#" class="contact-link">
+                <ion-icon name="location-outline"></ion-icon>
+
+                <address>Haji Murad Jaffer Goth Near Pakistan Hotel</address>
+              </a>
+            </li>
+
+            <li>
+              <a href="" class="contact-link">
+                <ion-icon name="call-outline"></ion-icon>
+
+                <span>03370388570</span>
+              </a>
+            </li>
+
+            <li>
+              <a href="mailto:contact@homeverse.com" class="contact-link">
+                <ion-icon name="mail-outline"></ion-icon>
+
+                <span>raffaysattar123@gmail.com</span>
+              </a>
+            </li>
+
+          </ul>
+
+          
+
+        </div>
+
+        <div class="footer-link-box">
+
+          <ul class="footer-list">
+
+            <li>
+              <p class="footer-list-title">Company</p>
+            </li>
+
+            <li>
+                <a href="C:\Users\mahwish\Desktop\ISE proj\index.html" class="footer-link">Home</a>
+              </li>
+
+            <li>
+              <a href="C:\Users\mahwish\Desktop\ISE proj\about.html" class="footer-link">About</a>
+            </li>
+
+            <li>
+              <a href="https://www.google.com/maps/place/Haji+Murad+Jaffer+Haji+Murad+Jafar+Village+Gadap+Town,+Karachi,+Karachi+City,+Sindh/@24.877522,67.2136838,18z/data=!4m5!3m4!1s0x3eb330ca9b1bae59:0xc87fc1d527999835!8m2!3d24.8775541!4d67.213655" class="footer-link">Locations Map</a>
+            </li>
+
+            <li>
+              <a href="C:\Users\mahwish\Desktop\ISE proj\contact.html" class="footer-link">Contact us</a>
+            </li>  
+
+          </ul>
+
+          
+    <div class="footer-bottom">
+      <div class="container">
+
+        <p class="copyright">
+          &copy; 2022 <a href="https://github.com/Wasay033">Abdul Wasay Sattar</a>. All Rights Reserved
+        </p>
+
+      </div>
+    </div>
+
+  </footer>
+
+
+
+
+
+
+
+  <!-- 
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  
+
+    
+</body>
+</html>
